@@ -4,8 +4,9 @@ python:
   - "3.5"
 before_install:
   - mv travis_secrets.yaml secrets.yaml
-  - touch "ssl.crt"
-  - touch "ssl.key"
+  - touch "/ssl/fullchain.pem"
+  - touch "/ssl/privkey.pem"
+  - touch "home-assistant.log"
 install:
   - pip3 install homeassistant
 script:
