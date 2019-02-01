@@ -1,0 +1,4 @@
+name: Motion Sensors
+entities:
+  - binary_sensor.foyer_motion
+  - binary_sensor.hallway_motion

@@ -1,0 +1,10 @@
+view: yes
+name: Lights
+icon: mdi:lightbulb
+entities:
+  - group.kitchen
+  - group.living_room
+  - group.dining_room
+  - group.playroom
+  - group.outside
+  - group.master

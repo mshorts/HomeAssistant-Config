@@ -1,0 +1,5 @@
+name: Outside
+control: hidden
+entities:
+  - switch.exterior_front_entry
+  - switch.exterior_back_entry_and_post

@@ -1,0 +1,79 @@
+- id: '1537840545229'
+  alias: Turn on Kitchen Upon Entry at Night
+  trigger:
+  - entity_id: binary_sensor.garage
+    from: 'off'
+    platform: state
+    to: 'on'
+  condition:
+  - condition: state
+    entity_id: sun.sun
+    state: below_horizon
+  action:
+  - data:
+      entity_id: light.kitchen_refrigerator_lights
+    service: light.turn_on
+- id: '1540480257337'
+  alias: Turn on Outside Lights at Dusk
+  trigger:
+  - event: sunset
+    offset: -00:30:00
+    platform: sun
+  condition: []
+  action:
+  - data:
+      entity_id: group.outside
+    service: homeassistant.turn_on
+- id: '1540480339940'
+  alias: Turn off Outside Lights at Sunrise
+  trigger:
+  - event: sunrise
+    platform: sun
+  condition: []
+  action:
+  - data:
+      entity_id: group.outside
+    service: homeassistant.turn_off
+- id: '1540605897722'
+  alias: Send Backups to DropBox
+  trigger:
+  - at: 04:00:00
+    platform: time
+  condition: []
+  action:
+  - data:
+      addon: 7be23ff5_dropbox_sync
+      input:
+        command: upload
+    service: hassio.addon_stdin
+- id: '1543184110215'
+  alias: Close Shades at Sunset
+  trigger:
+  - event: sunset
+    offset: 00:15:00
+    platform: sun
+  condition: []
+  action:
+  - data:
+      entity_id: cover.dining_room_shade
+    service: cover.close_cover
+  - data:
+      entity_id: cover.living_room_shade
+    service: cover.close_cover
+- id: '1543200942367'
+  alias: Open Shades after Sunrise
+  trigger:
+  - event: sunrise
+    offset: 00:05:00
+    platform: sun
+  condition:
+  - condition: state
+    entity_id: group.all_devices
+    state: home
+  action:
+  - data:
+      entity_id: cover.living_room_shade
+    service: cover.open_cover
+  - data:
+      entity_id: cover.dining_room_shade
+    service: cover.open_cover

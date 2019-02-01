@@ -1,0 +1,8 @@
+name: Doors
+control: hidden
+entities:
+  - binary_sensor.basement
+  - binary_sensor.dining_room
+  - binary_sensor.front
+  - binary_sensor.garage
+  - binary_sensor.laundry_room

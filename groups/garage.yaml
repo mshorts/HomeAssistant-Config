@@ -1,0 +1,4 @@
+name: Garage
+entities:
+  - cover.left_garage_door
+  - cover.right_garage_door

@@ -1,0 +1,4 @@
+name: Playroom
+control: hidden
+entities:
+  - light.playroom_main_lights

@@ -1,0 +1,5 @@
+name: Family
+entities:
+  - device_tracker.mattsiphonexr
+  - device_tracker.mariannesiphonexr
+  - device_tracker.geoffreysiphone

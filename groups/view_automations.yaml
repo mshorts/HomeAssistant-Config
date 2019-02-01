@@ -1,0 +1,5 @@
+view: yes
+name: Automations
+icon: mdi:robot
+entities:
+  - group.all_automations

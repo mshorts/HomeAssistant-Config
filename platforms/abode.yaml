@@ -1,0 +1,4 @@
+username: !secret abode_username
+password: !secret abode_password
+name: Abode Alarm System
+polling: False

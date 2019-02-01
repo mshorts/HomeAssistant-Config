@@ -1,0 +1,93 @@
+sensor.dark_sky_summary:
+  friendly_name: Weather Summary
+
+alarm_control_panel.abode_alarm_system:
+  friendly_name: Alarm System
+
+light.dining_room_back_half:
+  friendly_name: Back Half
+
+light.dining_room_front_half:
+  friendly_name: Front Half
+
+light.dining_room_fireplace:
+  friendly_name: Fireplace
+
+light.living_room_main_lights:
+  friendly_name: Main Lights
+
+light.kitchen_main_lights:
+  friendly_name: Main Lights
+
+light.kitchen_refrigerator_lights:
+  friendly_name: Refrigerator Lights
+
+light.playroom_main_lights:
+  friendly_name: Main Lights
+
+light.master_bedroom_table_lamp:
+  friendly_name: Table Lamp
+
+switch.exterior_back_entry_and_post:
+  friendly_name: Back Entry & Post
+
+switch.exterior_front_entry:
+  friendly_name: Front Entry
+
+device_tracker.mattsiphonexr:
+  friendly_name: Matt
+
+device_tracker.mariannesiphonexr:
+  friendly_name: Marianne
+
+device_tracker.geoffreysiphone:
+  friendly_name: Geoffrey
+
+binary_sensor.master_bedroom_keypad:
+  icon: mdi:dialpad
+
+binary_sensor.downstairs_keypad:
+  icon: mdi:dialpad
+
+binary_sensor.keyfob:
+  icon: mdi:remote
+
+binary_sensor.downstairs_siren:
+  icon: mdi:alarm-bell
+
+binary_sensor.second_floor_siren:
+  icon: mdi:alarm-bell
+
+cover.living_room_shade:
+  friendly_name: Shade
+
+cover.dining_room_shade:
+  friendly_name: Shade
+
+media_player.apple_tv:
+  friendly_name: Living Room Apple TV
+
+media_player.living_room_2:
+  friendly_name: Living Room Sonos
+
+media_player.kitchen:
+  friendly_name: Kitchen Google Home
+
+group.all_automations:
+  hidden: false
+  friendly_name: All Automations
+  control: hidden
+
+#View Ordering
+group.default_view:
+  order: 1
+group.view_lights:
+  order: 2
+group.view_media:
+  order: 3
+group.view_security:
+  order: 4
+group.view_servers:
+  order: 5
+group.view_automations:
+  order: 6

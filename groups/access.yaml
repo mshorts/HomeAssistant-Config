@@ -1,0 +1,7 @@
+name: Access Control
+entities:
+  - binary_sensor.master_bedroom_keypad
+  - binary_sensor.downstairs_keypad
+  - binary_sensor.keyfob
+  - binary_sensor.downstairs_siren
+  - binary_sensor.second_floor_siren

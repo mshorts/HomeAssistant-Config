@@ -1,0 +1,10 @@
+view: yes
+name: Security
+icon: mdi:security
+entities:
+  - alarm_control_panel.abode_alarm_system
+  - group.doors
+  - group.motion
+  - group.access
+  - group.ring
+  - group.garage

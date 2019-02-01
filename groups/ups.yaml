@@ -1,0 +1,7 @@
+name: UPS
+entities:
+  - sensor.nut_ups_battery_runtime
+  - sensor.nut_ups_input_voltage
+  - sensor.nut_ups_load
+  - sensor.nut_ups_nominal_real_power
+  - sensor.nut_ups_status

@@ -1,0 +1,8 @@
+- platform: nut
+  host: !secret nut_host
+  resources:
+    - ups.load
+    - ups.realpower.nominal
+    - ups.status.display
+    - input.voltage
+    - battery.runtime

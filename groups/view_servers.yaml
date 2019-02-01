@@ -1,0 +1,8 @@
+view: yes
+name: Servers
+icon: mdi:server
+entities:
+  - group.pihole
+  - group.systemmonitor
+  - group.hass_files
+  - group.ups

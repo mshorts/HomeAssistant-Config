@@ -1,0 +1,36 @@
+# Main configuration
+homeassistant: !include conf/homeassistant.yaml
+
+#Core items
+http: !include conf/http.yaml
+frontend:
+config:
+updater:
+discovery:
+logbook:
+map:
+sun:
+ios:
+cloud: !include_dir_named clouds/
+group: !include_dir_named groups/
+
+history:
+recorder: !include conf/recorder.yaml
+
+logger:
+  default: error
+
+sensor: !include_dir_merge_list sensor/
+
+cover: !include_dir_merge_list cover/
+
+device_tracker: !include_dir_merge_list device_trackers/
+
+lutron_caseta: !include platforms/lutron.yaml
+abode: !include platforms/abode.yaml
+ring: !include platforms/ring.yaml
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+
+zone: !include zones.yaml

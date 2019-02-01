@@ -1,0 +1,5 @@
+name: Living Room
+control: hidden
+entities:
+  - light.living_room_main_lights
+  - cover.living_room_shade

@@ -1,0 +1,7 @@
+view: yes
+name: Home
+icon: mdi:home
+entities:
+  - alarm_control_panel.abode_alarm_system
+  - group.family
+  - group.weather

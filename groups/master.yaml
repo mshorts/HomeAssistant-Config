@@ -1,0 +1,4 @@
+name: Master Bedroom
+control: hidden
+entities:
+  - light.master_bedroom_table_lamp

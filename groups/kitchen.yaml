@@ -1,0 +1,4 @@
+name: Kitchen
+entities:
+  - light.kitchen_main_lights
+  - light.kitchen_refrigerator_lights

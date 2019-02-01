@@ -1,0 +1,6 @@
+name: Dining Room
+entities:
+  - light.dining_room_back_half
+  - light.dining_room_front_half
+  - light.dining_room_fireplace
+  - cover.dining_room_shade
