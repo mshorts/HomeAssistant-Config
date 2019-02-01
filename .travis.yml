@@ -5,6 +5,7 @@ python:
 before_install:
   - mv travis_secrets.yaml secrets.yaml
   - touch ./home-assistant.log
+  - mkdir /ssl
   - touch /ssl/fullchain.pem
   - touch /ssl/privkey.pem
 install:
