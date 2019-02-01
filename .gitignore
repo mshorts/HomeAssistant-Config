@@ -1,0 +1,25 @@
+# Let's ignore it all and then we'll add what we want
+/*
+
+# Files I want to commit
+!*.yaml
+!*.md
+
+# Directories I want to commit
+!/conf
+!/cover
+!/device_trackers
+!/groups
+!/packages
+!/platforms
+!/sensor
+
+# Better safe than sorry
+.*
+secrets.yaml
+ip_bans.yaml
+plex.conf
+known_devices.yaml
+
+# One last thing
+!.gitignore
